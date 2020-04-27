@@ -1,11 +1,5 @@
 import React from 'react';
 
-var nome = "Ribery";
-var foto = "https://s2.glbimg.com/_lpAmBcCPXkfZYJv93WXlWGXrBE=/0x0:884x604/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2018/B/Z/V9c7KZQYOJvuhawTyB0w/ribery.png";
-var cor_favorita = "Vermelho";
-var comida_favorita = "Lasanha";
-var link_github = "http://github.com/ribery";
-
 class App extends React.Component {
   render() {
     return (
@@ -36,22 +30,22 @@ class App extends React.Component {
             </thead>
             <tbody>
               <tr>
-                <td>{nome}</td>
-                <td>{cor_favorita}</td>
-                <td>{comida_favorita}</td>
-                <td><a href={link_github}>ver Github</a></td>
+                <td>Ribery</td>
+                <td>Vermelho</td>
+                <td>Lasanha</td>
+                <td><a href="http://github.com/ribery">ver Github</a></td>
               </tr>
               <tr>
-                <td>{nome}</td>
-                <td>{cor_favorita}</td>
-                <td>{comida_favorita}</td>
-                <td><a href={link_github}>ver Github</a></td>
+                <td>Ribery</td>
+                <td>Vermelho</td>
+                <td>Lasanha</td>
+                <td><a href="http://github.com/ribery">ver Github</a></td>
               </tr>
               <tr>
-                <td>{nome}</td>
-                <td>{cor_favorita}</td>
-                <td>{comida_favorita}</td>
-                <td><a href={link_github}>ver Github</a></td>
+                <td>Ribery</td>
+                <td>Vermelho</td>
+                <td>Lasanha</td>
+                <td><a href="http://github.com/ribery">ver Github</a></td>
               </tr>
             </tbody>
           </table>
@@ -61,45 +55,45 @@ class App extends React.Component {
             <div className="col s4">
               <div className="card hoverable">
                 <div className="card-image">
-                  <img src={foto}  />
-                  <span className="card-title">{nome}</span>
+                  <img src="https://s2.glbimg.com/_lpAmBcCPXkfZYJv93WXlWGXrBE=/0x0:884x604/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2018/B/Z/V9c7KZQYOJvuhawTyB0w/ribery.png"  />
+                  <span className="card-title">Ribery</span>
                 </div>
                 <div className="card-content">
-                  <p><b>cor favorita:</b> {cor_favorita}</p>
-                  <p><b>comida favorita:</b> {comida_favorita}  </p>
+                  <p><b>cor favorita:</b> Vermelho</p>
+                  <p><b>comida favorita:</b> Lasanha  </p>
                 </div>
                 <div className="card-action">
-                  <a href={link_github}>Ver github</a>
+                  <a href="http://github.com/ribery">Ver github</a>
                 </div>
               </div>
             </div>
             <div className="col s4">
               <div className="card hoverable  ">
                 <div className="card-image">
-                  <img src={foto}  />
-                  <span className="card-title">{nome}</span>
+                  <img src="https://s2.glbimg.com/_lpAmBcCPXkfZYJv93WXlWGXrBE=/0x0:884x604/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2018/B/Z/V9c7KZQYOJvuhawTyB0w/ribery.png"  />
+                  <span className="card-title">Ribery</span>
                 </div>
                 <div className="card-content">
-                  <p><b>cor favorita:</b> {cor_favorita}</p>
-                  <p><b>comida favorita:</b> {comida_favorita}  </p>
+                  <p><b>cor favorita:</b> Vermelho</p>
+                  <p><b>comida favorita:</b> Lasanha  </p>
                 </div>
                 <div className="card-action">
-                  <a href={link_github}>Ver github</a>
+                  <a href="http://github.com/ribery">Ver github</a>
                 </div>
               </div>
             </div>
             <div className="col s4">
               <div className="card hoverable">
                 <div className="card-image">
-                  <img src={foto}  />
-                  <span className="card-title">{nome}</span>
+                  <img src="https://s2.glbimg.com/_lpAmBcCPXkfZYJv93WXlWGXrBE=/0x0:884x604/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2018/B/Z/V9c7KZQYOJvuhawTyB0w/ribery.png"  />
+                  <span className="card-title">Ribery</span>
                 </div>
                 <div className="card-content">
-                  <p><b>cor favorita:</b> {cor_favorita}</p>
-                  <p><b>comida favorita:</b> {comida_favorita}  </p>
+                  <p><b>cor favorita:</b> Vermelho</p>
+                  <p><b>comida favorita:</b> Lasanha  </p>
                 </div>
                 <div className="card-action">
-                  <a href={link_github}>Ver github</a>
+                  <a href="http://github.com/ribery">Ver github</a>
                 </div>
               </div>
             </div>
