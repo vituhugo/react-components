@@ -7,7 +7,7 @@ class Card extends React.Component {
               <div className="card hoverable">
                 <div className="card-image">
                   <img src={this.props.foto}  />
-                  <span className="card-title">{this.props.title}</span>
+                  <span className="card-title">{this.props.titulo}</span>
                 </div>
                 <div className="card-content">
                   <p><b>cor favorita:</b> {this.props.cor}</p>

@@ -2,25 +2,23 @@ import React from 'react';
 import Card from './Card';
 import Title from './Title';
 import Table from './Table';
+import NavItem from './NavItem';
 
 class App extends React.Component {
 
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      nav: [
-        {titulo: "Home", link: "#"},
-        {titulo: "Página interna", link: "#"},
-        {titulo: "Contato", link: "#"},
-        {titulo: "Sobre", link: "#"},
-        {titulo: "Blog", link: "#"},
-      ],
-      users: [
-        {titulo: "Victor", cor: "Verde", comida: "Lasanha"},
-        {titulo: "Victor", cor: "Verde", comida: "Lasanha"}
-      ]
-    };
+  state = {
+    nav: [
+      {titulo: "Home", link: "#"},
+      {titulo: "Página interna", link: "#"},
+      {titulo: "Contato", link: "#"},
+      {titulo: "Sobre", link: "#"},
+      {titulo: "Blog", link: "#"},
+    ],
+    users: [
+      {titulo: "Victor", cor: "Verde", comida: "Lasanha"},
+      {titulo: "Victor", cor: "Verde", comida: "Lasanha"},
+      {titulo: "Maria", cor: "Cinza", comida: "Arroz"}
+    ]
   }
 
   render() {
@@ -29,9 +27,9 @@ class App extends React.Component {
         <nav className="green darken-4">
           <div className="container">
             <ul>
-              {this.state.nav.map((item) => 
-                <li><a href={item.link}>{item.titulo}</a></li>
-              )}
+              <NavItem titulo="Home" />
+              <NavItem titulo="Pagina interna" />
+              <NavItem titulo="Contato" />
             </ul>
           </div>
         </nav>
@@ -45,7 +43,7 @@ class App extends React.Component {
           <h3 className="title green-text"> Cartões de usuários </h3>
           <div className="row">
             {this.state.users.map((user) => 
-              <Card title={user.title} cor={user.cor} comida={user.comida} foto="https://cdn.meutimao.com.br/_upload/idolos-do-corinthians/vampeta.jpg" />
+              <Card titulo={user.titulo} cor={user.cor} comida={user.comida} foto="https://cdn.meutimao.com.br/_upload/idolos-do-corinthians/vampeta.jpg" />
             )}
           </div>
 
@@ -68,7 +66,12 @@ class App extends React.Component {
               <label htmlFor="link_github">Github</label>
             </div>
             <div className="right-align">
-              <a class="waves-effect waves-light green btn">button</a>
+              <a class="waves-effect waves-light green btn" onClick={e => {this.setState({
+                ...this.state
+                , users: [
+                  ...this.state.users,
+                  {titulo: "Maria", cor: "Cinza", comida: "Arroz"}
+                ]}) }}>button</a>
             </div>
           </form>
           <br />

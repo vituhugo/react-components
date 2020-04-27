@@ -14,9 +14,9 @@ class Table extends React.Component {
               </tr>
             </thead>
             <tbody>
-                <TableRow />
-                <TableRow />
-                <TableRow />
+              {this.props.users.map((user) => 
+                <TableRow titulo={user.titulo} cor={user.cor} comida={user.comida} />)
+              }
             </tbody>
           </table>
         )
