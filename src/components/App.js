@@ -4,31 +4,49 @@ import Title from './Title';
 import Table from './Table';
 
 class App extends React.Component {
+
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      nav: [
+        {titulo: "Home", link: "#"},
+        {titulo: "Página interna", link: "#"},
+        {titulo: "Contato", link: "#"},
+        {titulo: "Sobre", link: "#"},
+        {titulo: "Blog", link: "#"},
+      ],
+      users: [
+        {titulo: "Victor", cor: "Verde", comida: "Lasanha"},
+        {titulo: "Victor", cor: "Verde", comida: "Lasanha"}
+      ]
+    };
+  }
+
   render() {
     return (
       <div>
         <nav className="green darken-4">
           <div className="container">
             <ul>
-              <li><a href="#">Página principal</a></li>
-              <li><a href="#">Página Interna 1</a></li>
-              <li><a href="#">Página Interna 2</a></li>
-              <li><a href="#">Página Interna 3</a></li>
+              {this.state.nav.map((item) => 
+                <li><a href={item.link}>{item.titulo}</a></li>
+              )}
             </ul>
           </div>
         </nav>
         <div className="container">
           
-          <Title />
+          <Title titulo="Home Page" />
       
           <h3 className="title green-text"> Listagem de usuários </h3>    
-          <Table />
+          <Table users={this.state.users} />
           
           <h3 className="title green-text"> Cartões de usuários </h3>
           <div className="row">
-            <Card />
-            <Card />
-            <Card />
+            {this.state.users.map((user) => 
+              <Card title={user.title} cor={user.cor} comida={user.comida} foto="https://cdn.meutimao.com.br/_upload/idolos-do-corinthians/vampeta.jpg" />
+            )}
           </div>
 
           <h3 className="title green-text"> Adicionar usuário </h3>
