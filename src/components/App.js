@@ -1,5 +1,7 @@
 import React from 'react';
 import Card from './Card';
+import Title from './Title';
+import Table from './Table';
 
 class App extends React.Component {
   render() {
@@ -17,39 +19,10 @@ class App extends React.Component {
         </nav>
         <div className="container">
           
-          <h2 className="title green-text text-darken-4"> Olá mundo! </h2>
-          
-          <h3 className="title green-text"> Listagem de usuários </h3>
-          <table>
-            <thead>
-              <tr>
-                <th>Nome</th>
-                <th>Cor Favorita</th>
-                <th>Comida Favorita</th>
-                <th>Github</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Ribery</td>
-                <td>Vermelho</td>
-                <td>Lasanha</td>
-                <td><a href="http://github.com/ribery">ver Github</a></td>
-              </tr>
-              <tr>
-                <td>Ribery</td>
-                <td>Vermelho</td>
-                <td>Lasanha</td>
-                <td><a href="http://github.com/ribery">ver Github</a></td>
-              </tr>
-              <tr>
-                <td>Ribery</td>
-                <td>Vermelho</td>
-                <td>Lasanha</td>
-                <td><a href="http://github.com/ribery">ver Github</a></td>
-              </tr>
-            </tbody>
-          </table>
+          <Title />
+      
+          <h3 className="title green-text"> Listagem de usuários </h3>    
+          <Table />
           
           <h3 className="title green-text"> Cartões de usuários </h3>
           <div className="row">
